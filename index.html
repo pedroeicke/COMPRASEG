@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://lucide.dev/icons/shield-alert.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COMPRASEG 2026 | Compras da Segurança Pública</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Oswald', 'sans-serif'],
+            },
+            colors: {
+              tactical: {
+                midnight: '#00010E', // Azul quase preto (Fundo Base)
+                dark: '#021035',     // Azul escuro (Sombras/Profundidade)
+                medium: '#04194E',   // Azul claro (Luzes/Destaques)
+                slate: '#111827',
+              },
+              brand: {
+                blue: '#1e40af', // Cobalto sério (Mantido para botões)
+                glow: '#3b82f6', // Brilho tático
+                gold: '#eab308', // Detalhes premium
+              },
+              'blue-safety': '#1D4ED8',
+            },
+            backgroundImage: {
+              'hero-glow': "radial-gradient(circle at center, rgba(30, 64, 175, 0.2) 0%, rgba(0, 0, 0, 0) 70%)",
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #00010E;
+        color: #e5e7eb;
+      }
+      .glass-panel {
+        background: rgba(2, 16, 53, 0.3); /* Baseado no tactical-dark */
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #00010E; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #04194E; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #1e40af; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
